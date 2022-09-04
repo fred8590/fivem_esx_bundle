@@ -15,7 +15,7 @@ RUN wget -O- http://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/$
  && wget -O- http://github.com/citizenfx/cfx-server-data/archive/${DATA_VER}.tar.gz \
         | tar xz --strip-components=1 -C opt/cfx-server-data \
     \
- && apk update && apk upgrade && apk -p $PWD add tini mariadb-dev tzdata
+&& apk -p $PWD add mariadb-dev tzdata
 
 ADD entrypoint usr/bin/entrypoint
 RUN chmod +x /output/usr/bin/entrypoint
