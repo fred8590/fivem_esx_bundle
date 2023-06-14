@@ -30,7 +30,7 @@ version: '2'
 services:
 # -------------------------------------------------------------------
   fivem:
-    image: henkallsn/fivem_esx_bundle
+    image: elsasssquirrel/fivem_esx_bundle
     stdin_open: true
     tty: true
     volumes:
